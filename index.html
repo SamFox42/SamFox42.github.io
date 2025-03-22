@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Fox Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div class="cursor-follower"></div>
+    <div class="cursor-dot"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L60 30L30 60L0 30L30 0Z" fill="currentColor"/>
+                    <path d="M30 15L45 30L30 45L15 30L30 15Z" fill="var(--background)"/>
+                </svg>
+                <span class="logo-text" data-en="Sam Fox" data-ru="Семён Лисичкин">Sam Fox</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero" class="nav-link" data-en="Home" data-ru="Главная">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-en="About" data-ru="Обо мне">About</a></li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-ru="Контакты">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="theme-toggle">
+                    <span class="light-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </span>
+                    <span class="dark-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-line" data-en="Digital Designer" data-ru="Цифровой Дизайнер">Digital Designer</span>
+                    <span class="hero-title-line" data-en="& Visual Artist" data-ru="&amp; Визуальный Художник">& Visual Artist</span>
+                </h1>
+                <p class="hero-subtitle" data-en="Creating memorable digital experiences through thoughtful design." data-ru="Создаю запоминающиеся цифровые проекты через осмысленный дизайн.">Creating memorable digital experiences through thoughtful design.</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary" data-en="About Me" data-ru="Обо мне">About Me</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Get In Touch" data-ru="Связаться">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="shape-container">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Me" data-ru="Обо мне">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="I'm a multidisciplinary designer specializing in creating unique visual identities and digital experiences. With over 8 years of experience, I've worked with brands across various industries to develop distinctive design solutions that communicate effectively and leave a lasting impression." 
+                       data-ru="Я многопрофильный дизайнер, специализирующийся на создании уникальных визуальных образов и цифровых проектов. С опытом более 8 лет, я сотрудничал с брендами из различных индустрий для разработки отличительных дизайнерских решений, которые эффективно коммуницируют и оставляют неизгладимое впечатление.">
+                        I'm a multidisciplinary designer specializing in creating unique visual identities and digital experiences. With over 8 years of experience, I've worked with brands across various industries to develop distinctive design solutions that communicate effectively and leave a lasting impression.
+                    </p>
+                    <p data-en="My approach combines strategic thinking with creative innovation, ensuring that each project not only looks exceptional but also achieves its objectives. I believe that great design balances form and function, creating beauty that serves a purpose." 
+                       data-ru="Мой подход сочетает стратегическое мышление с творческими инновациями, гарантируя, что каждый проект не только выглядит исключительно, но и достигает поставленных целей. Я верю, что великий дизайн балансирует между формой и функцией, создавая красоту, которая служит цели.">
+                        My approach combines strategic thinking with creative innovation, ensuring that each project not only looks exceptional but also achieves its objectives. I believe that great design balances form and function, creating beauty that serves a purpose.
+                    </p>
+                </div>
+                <div class="skills-container">
+                    <h3 data-en="My Expertise" data-ru="Мои навыки">My Expertise</h3>
+                    <ul class="skills-list">
+                        <li>UI/UX Design</li>
+                        <li>Brand Identity</li>
+                        <li>Digital Art</li>
+                        <li>Product Design</li>
+                        <li>Web Design</li>
+                        <li>Typography</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work section has been removed as requested -->
+
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get In Touch" data-ru="Связаться">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-en="Let's collaborate" data-ru="Давайте сотрудничать">Let's collaborate</h3>
+                    <p data-en="I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision." data-ru="Я всегда открыт для обсуждения новых проектов, творческих идей или возможностей стать частью вашего видения.">
+                        I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                    </p>
+                    <ul class="contact-details">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:hello@samfox.design">hello@samfox.design</a>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span data-en="Moscow & Worldwide" data-ru="Москва и весь мир">Moscow &amp; Worldwide</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <!-- Telegram -->
+                        <a href="https://t.me/samfoxdesign" class="social-link" title="Telegram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.846 1.467 1.816 3.212 2.862 5.09.343.579.697 1.153 1.068 1.763.34.493.682.969 1.07 1.153.32.183.707.224 1.09.12.385-.103.74-.363 1.022-.701 1.636-1.945 3.165-3.991 4.693-6.043.503.146 1.008.292 1.516.434 1.288.355 2.483.197 3.454-.788.645-.672.683-1.503.104-2.298-.001-.002-.002-.002-.002-.003-1.19-1.312-2.373-2.605-3.561-3.904l-.35-.387c-.301-.336-.598-.651-.896-.959-.722-.744-1.392-1.427-2.035-2.071-.322-.32-.61-.617-.905-.909-.83-.819-1.648-1.621-2.578-2.299-.13-.099-.275-.189-.442-.267-.366-.189-.747-.271-1.142-.27z"></path>
+                            </svg>
+                        </a>
+                        <!-- Kwork -->
+                        <a href="https://kwork.ru/user/samfoxdesign" class="social-link" title="Kwork">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 8v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5Z"></path>
+                                <path d="M11 21V8h4"></path>
+                                <path d="M11 13h7"></path>
+                                <path d="M7 8l4.5 4.5"></path>
+                                <path d="M7 17l4.5-4.5"></path>
+                            </svg>
+                        </a>
+                        <!-- FL.ru -->
+                        <a href="https://www.fl.ru/users/samfoxdesign/" class="social-link" title="FL.ru">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-en="Name" data-ru="Имя">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-en="Email" data-ru="Электронная почта">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-en="Message" data-ru="Сообщение">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn" data-en="Send Message" data-ru="Отправить сообщение">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L60 30L30 60L0 30L30 0Z" fill="currentColor"/>
+                    <path d="M30 15L45 30L30 45L15 30L30 15Z" fill="var(--background)"/>
+                </svg>
+                <span class="logo-text" data-en="Sam Fox" data-ru="Семён Лисичкин">Sam Fox</span>
+            </div>
+            <p class="copyright" data-en="© 2023 Sam Fox. All rights reserved." data-ru="© 2023 Семён Лисичкин. Все права защищены.">© 2023 Sam Fox. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/animations-extended.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
